@@ -1,0 +1,11 @@
+---
+import { resume } from '../../schema'
+import Section from '../Section.astro'
+import ExpCard from '../ExpCard.astro'
+---
+
+<Section title='Experiencia'>
+  {resume?.work.map((work) => (
+    <ExpCard {...work} />
+  ))}
+</Section>

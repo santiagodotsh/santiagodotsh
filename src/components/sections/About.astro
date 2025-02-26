@@ -1,0 +1,14 @@
+---
+import { resume } from '../../schema'
+import Section from '../Section.astro'
+---
+
+<Section title='Acerca de mí'>
+  {
+    resume?.basics.summary.split('\n').map((line) => (
+      <p class='text-pretty text-sm text-slate-300'>
+        {line}
+      </p>
+    ))
+  }
+</Section>

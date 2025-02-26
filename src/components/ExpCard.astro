@@ -1,0 +1,54 @@
+---
+interface Props {
+  endYear?: string
+  name: string
+  position: string
+  remote: boolean
+  startYear: string
+  summary: string
+  url: string
+}
+
+const {
+  endYear = new Date().getFullYear().toString(),
+  name,
+  position,
+  remote,
+  startYear,
+  summary,
+  url
+} = Astro.props
+---
+
+<div class='w-full h-auto flex flex-col justify-start items-start space-y-2'>
+  <div class='w-full h-auto flex flex-col justify-start items-start space-y-1.5'>
+    <div class='w-full h-auto flex flex-row justify-between items-center'>
+      <h3 class='inline-flex font-sans text-slate-100 items-center justify-center gap-x-1.5 font-medium'>
+        <a
+          href={url}
+          target='_blank'
+          rel='noopener noreferrer'
+          class='hover:underline'
+        >
+          {name}
+        </a>
+        {remote && (
+          <div class='flex justify-center items-center rounded-md px-2 py-0.5 bg-slate-900'>
+            <span class='text-xs font-medium text-slate-400 text-nowrap'>
+              Remote
+            </span>
+          </div>
+        )}
+      </h3>
+      <span class='font-light text-[15px] font-sans text-slate-300 tabular-nums'>
+        {`${startYear} - ${endYear}`}
+      </span>
+    </div>
+    <h4 class='text-sm text-slate-100 leading-none text-left'>
+      {position}
+    </h4>
+  </div>
+  <p class='text-pretty text-slate-300  mt-2 text-xs'>
+    {summary}
+  </p>
+</div>

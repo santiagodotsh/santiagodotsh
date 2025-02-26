@@ -1,0 +1,92 @@
+---
+import { resume } from '../../schema'
+import Section from '../Section.astro'
+import type { SocialIcon } from '../../types'
+import HTML from '../icons/HTML.astro'
+import CSS from '../icons/CSS.astro'
+import JavaScript from '../icons/JavaScript.astro'
+import TypeScript from '../icons/TypeScript.astro'
+import Python from '../icons/Python.astro'
+import Node from '../icons/Node.astro'
+import React from '../icons/React.astro'
+import Expo from '../icons/Expo.astro'
+import Electron from '../icons/Electron.astro'
+import Next from '../icons/Next.astro'
+import Atr from '../icons/Astro.astro'
+import Redux from '../icons/Redux.astro'
+import TailwindCSS from '../icons/TailwindCSS.astro'
+import Git from '../icons/Git.astro'
+import Docker from '../icons/Docker.astro'
+import Linux from '../icons/Linux.astro'
+import MongoDB from '../icons/MongoDB.astro'
+import MySQL from '../icons/MySQL.astro'
+import Figma from '../icons/Figma.astro'
+import Express from '../icons/Express.astro'
+import Nest from '../icons/Nest.astro'
+import Php from '../icons/Php.astro'
+import Laravel from '../icons/Laravel.astro'
+import TanStackQuery from '../icons/TanStackQuery.astro'
+import Zustand from '../icons/Zustand.astro'
+
+const SKILL_ICONS:SocialIcon = {
+  HTML,
+  CSS,
+  JavaScript,
+  TypeScript,
+  Python,
+  Node,
+  Express,
+  React,
+  Expo,
+  Electron,
+  Next,
+  Astro: Atr,
+  Redux,
+  Nest,
+  Php,
+  TailwindCSS,
+  Git,
+  Docker,
+  Linux,
+  Laravel,
+  MongoDB,
+  TanStackQuery,
+  MySQL,
+  Figma,
+  Zustand,
+}
+---
+
+<Section title='Skills'>
+  <div class='flex print:-m-[9px] pt-1 flex-wrap gap-1'>
+    {resume?.skills.map((skill) => {
+      const Icon = SKILL_ICONS[
+        skill === 'Node.js'
+          ? 'Node'
+          : skill === 'Next.js'
+          ? 'Next'
+          : skill === 'NestJs'
+          ? 'Nest'
+          : skill === 'Tailwind CSS'
+          ? 'TailwindCSS'
+          : skill === 'PHP'
+          ? 'Php'
+          : skill === 'TanStack Query'
+          ? 'TanStackQuery'
+          : skill]
+
+      return (
+        <div class='flex flex-row print:border print:border-slate-200 gap-1.5 justify-center items-center rounded-md px-2 py-0.5 bg-slate-800'>
+          {Icon && (
+            <span class='text-slate-300'>
+              <Icon />
+            </span>
+          )}
+          <span class='text-[13px] font-sans text-slate-100'>
+            {skill}
+          </span>
+        </div>
+      )
+    })}
+  </div>
+</Section>

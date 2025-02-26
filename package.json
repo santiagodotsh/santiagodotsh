@@ -1,0 +1,17 @@
+{
+  "name": "santiagodotsh",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.9",
+    "astro": "^5.3.1",
+    "ninja-keys": "^1.2.2",
+    "tailwindcss": "^4.0.9"
+  }
+}

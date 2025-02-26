@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+ninja-keys {
+  --ninja-accent-color: #90a1b9;
+  --ninja-actions-height: auto;
+  --ninja-font-size: 15px;
+  --ninja-modal-background: #020618;
+  --ninja-secondary-background-color: #172033;
+  --ninja-text-color: #ffffff;
+  --ninja-secondary-text-color: #90a1b9;
+  --ninja-selected-background: #0f172b;
+}
+
+ninja-keys::part(ninja-input) {
+  display: none;
+}
+

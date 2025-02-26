@@ -1,0 +1,249 @@
+{
+  "basics": {
+    "name": "Santiago Ramos",
+    "label": "Software developer | TypeScript | Node.js | React | Next.js | Expo | NestJS | Git | Linux | Docker",
+    "image": "/me.png",
+    "email": "hello@santiago.sh",
+    "phone": "+51967779923",
+    "url": "https://santiago.sh",
+    "download": "/resume.pdf",
+    "summary": "Soy Santiago, un desarrollador de software de Perú con 4 años de experiencia escribiendo código limpio y mantenible. Me especializo en la creación de interfaces de usuario intuitivas, el desarrollo de lógica eficiente del lado del servidor y la optimización de flujos de datos. Me apasiona el aprendizaje continuo y contribuir a proyectos de código abierto.",
+    "location": {
+      "city": "Ilo",
+      "country": "Perú",
+      "timezone": "UTC-5",
+      "maps": "https://www.google.com/maps/place/Ilo/@-17.6684255,-71.3789423,13z/data=!3m1!4b1!4m6!3m5!1s0x91445b07eeb2462b:0xf91ceb9b25c28cf5!8m2!3d-17.6421123!4d-71.3385505!16zL20vMDZrZmpn?entry=ttu"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "santiagodotsh",
+        "url": "https://github.com/"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "santiagodotsh",
+        "url": "https://linkedin.com/in/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Innovahora",
+      "position": "Full-stack Web & Mobile Developer",
+      "remote": false,
+      "url": "https://innovahora.com/web/",
+      "startYear": "2024",
+      "summary": "Desarrollo aplicaciones web y móviles personalizadas según las necesidades del cliente, gestionando la lógica del backend y las interfaces del frontend en colaboración con un equipo multidisciplinario. Tecnologías utilizadas: TypeScript, Next.js, Expo, PHP, Laravel y MySQL."
+    },
+    {
+      "name": "Since Global",
+      "position": "Full-stack Web Developer",
+      "remote": true,
+      "url": "https://since.global",
+      "startYear": "2023",
+      "endYear": "2024",
+      "summary": "Contribuí al desarrollo del producto principal implementando nuevas funcionalidades y mejorando su rendimiento. Trabajé con equipos multifuncionales para optimizar la experiencia del usuario. Tecnologías utilizadas: TypeScript, Node.js, Next.js y MongoDB."
+    },
+    {
+      "name": "Workana",
+      "position": "Freelance Developer",
+      "remote": true,
+      "url": "#",
+      "startYear": "2021",
+      "endYear": "2023",
+      "summary": "He realizado proyectos con éxito, obteniendo comentarios positivos y destacando entre los principales freelancers de mi país. Me especializo en soluciones confiables y efectivas en backend y frontend. Tecnologías utilizadas: JavaScript, React, Node.js y MySQL."
+    }
+  ],
+  "education": [
+    {
+      "institution": "ONE - Alura",
+      "url": "https://app.aluracursos.com/program/certificate/2f9ee185-6b9b-4ea5-837c-26ce5a36cbdd",
+      "area": "Oracle Next Education",
+      "studyType": "F2 T4 Backend Developer",
+      "startYear": "2022",
+      "endYear": "2023"
+    },
+    {
+      "institution": "Universidad Privada de Tacna",
+      "url": "https://www.upt.edu.pe",
+      "area": "Medicine",
+      "studyType": "Bachelor's Degree",
+      "startYear": "2015",
+      "endYear": "2022"
+    }
+  ],
+  "certificates": [],
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "NestJs",
+    "React",
+    "Next.js",
+    "Expo",
+    "Redux",
+    "TanStack Query",
+    "Zustand",
+    "Tailwind CSS",
+    "PHP",
+    "Laravel",
+    "MongoDB",
+    "MySQL",
+    "Git",
+    "Linux",
+    "Docker",
+    "Figma"
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Ingles",
+      "fluency": "Intermedio"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Nest Shop API",
+      "releaseDate": "2024",
+      "description": "🛒 🐈 CRUD con NestJS, PostgreSQL, autenticación JWT y carga de archivos.",
+      "url": "https://github.com/santiagodotsh/nest-teslo-shop",
+      "repository": "https://github.com/santiagodotsh/nest-teslo-shop",
+      "isActive": true,
+      "keywords": [
+        "TypeScript",
+        "Node.js",
+        "NestJs",
+        "PostgreSQL",
+        "JWT",
+        "Socket.io"
+      ]
+    },
+    {
+      "name": "Nest WebSocket",
+      "releaseDate": "2024",
+      "description": "🔌 💬 Aplicación en Vanilla JS y WebSocket para conectarse con Nest Shop.",
+      "url": "https://github.com/santiagodotsh/nest-websocket-client",
+      "repository": "https://github.com/santiagodotsh/nest-websocket-client",
+      "isActive": true,
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Socket.io",
+        "Vite"
+      ]
+    },
+    {
+      "name": "Car Dealership API",
+      "releaseDate": "2024",
+      "description": "🚘 🐈 API REST minimalista creada con NestJs usando datos estáticos.",
+      "url": "https://github.com/santiagodotsh/nest-car-dealership",
+      "repository": "https://github.com/santiagodotsh/nest-car-dealership",
+      "isActive": true,
+      "keywords": [
+        "TypeScript",
+        "Node.js",
+        "NestJs",
+        "UUID",
+        "Swagger"
+      ]
+    },
+    {
+      "name": "ACARA scraper",
+      "releaseDate": "2024",
+      "description": "🔍 📊 Extrae datos de la guía oficial de precios de ACARA en formato JSON.",
+      "url": "https://github.com/santiagodotsh/acara-scraper",
+      "repository": "https://github.com/santiagodotsh/acara-scraper",
+      "isActive": true,
+      "keywords": [
+        "TypeScript",
+        "Node.js",
+        "Cheerio",
+        "Axios",
+        "tsup"
+      ]
+    },
+    {
+      "name": "Expo Calculator",
+      "releaseDate": "2024",
+      "description": "🧮 📱 Aplicación de calculadora básica con React Native y Expo.",
+      "url": "https://github.com/santiagodotsh/expo-calculator",
+      "repository": "https://github.com/santiagodotsh/expo-calculator",
+      "isActive": true,
+      "keywords": [
+        "TypeScript",
+        "React",
+        "React Native",
+        "Expo",
+        "TailwindCSS"
+      ]
+    },
+    {
+      "name": "Router Contacts ",
+      "releaseDate": "2024",
+      "description": "📇 ⭕ Administrador de contactos con React Router (optimistic UI).",
+      "url": "https://github.com/santiagodotsh/react-router-contacts",
+      "repository": "https://github.com/santiagodotsh/react-router-contacts",
+      "isActive": true,
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "React Router",
+        "Vite"
+      ]
+    },
+    {
+      "name": "Query Store",
+      "releaseDate": "2024",
+      "description": "📦 🌴 Tienda de productos con TanStack Query, Turborepo y fake API",
+      "url": "https://github.com/santiagodotsh/react-query-store",
+      "repository": "https://github.com/santiagodotsh/react-query-store",
+      "isActive": true,
+      "keywords": [
+        "TypeScript",
+        "React",
+        "React Router",
+        "TanStack Query",
+        "JSON-server"
+      ]
+    },
+    {
+      "name": "Issues Viewer",
+      "releaseDate": "2024",
+      "description": "🐛 🌴 Visualizador de issues de React con estado de TanStack Query.",
+      "url": "https://github.com/santiagodotsh/react-query-issues",
+      "repository": "https://github.com/santiagodotsh/react-query-issues",
+      "isActive": true,
+      "keywords": [
+        "TypeScript",
+        "React",
+        "React Router",
+        "TanStack Query",
+        "Vite"
+      ]
+    },
+    {
+      "name": "Zustand Dashboard",
+      "releaseDate": "2024",
+      "description": "📊 🧸 Panel de control con rutas privadas y estado gestionado con Zustand.",
+      "url": "https://github.com/santiagodotsh/zustand-dashboard",
+      "repository": "https://github.com/santiagodotsh/zustand-dashboard",
+      "isActive": true,
+      "keywords": [
+        "TypeScript",
+        "React",
+        "React Router",
+        "Zustand",
+        "Vite"
+      ]
+    }
+  ]
+}
