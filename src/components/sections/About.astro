@@ -1,14 +1,15 @@
 ---
-import { resume } from '../../schema'
+import { resume } from '../../utils/schema'
 import Section from '../Section.astro'
+import { formatDate } from '../../utils/format-date'
+
+const start = resume!.work[resume!.work.length - 1].start
 ---
 
 <Section title='Acerca de mí'>
-  {
-    resume?.basics.summary.split('\n').map((line) => (
-      <p class='text-pretty text-sm print:text-slate-800 text-slate-300'>
-        {line}
-      </p>
-    ))
-  }
+  {resume?.basics.summary.split('\n').map(line => (
+    <p class='text-pretty text-sm print:text-slate-800 text-slate-300'>
+      {line.split('${experience}').join(formatDate(start).totalYearsString)}
+    </p>
+  ))}
 </Section>

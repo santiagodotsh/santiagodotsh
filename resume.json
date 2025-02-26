@@ -7,7 +7,7 @@
     "phone": "+51967779923",
     "url": "https://santiago.sh",
     "download": "/resume.pdf",
-    "summary": "Soy Santiago, un desarrollador de software de Perú con 4 años de experiencia escribiendo código limpio y mantenible. Me especializo en la creación de interfaces de usuario intuitivas, el desarrollo de lógica eficiente del lado del servidor y la optimización de flujos de datos. Me apasiona el aprendizaje continuo y contribuir a proyectos de código abierto.",
+    "summary": "Soy Santiago, un desarrollador de software de Perú con más de ${experience} de experiencia escribiendo código limpio y mantenible. Me especializo en la creación de interfaces de usuario intuitivas, el desarrollo de lógica eficiente del lado del servidor y la optimización de flujos de datos. Me apasiona el aprendizaje continuo y contribuir a proyectos de código abierto.",
     "location": {
       "city": "Ilo",
       "country": "Perú",
@@ -78,18 +78,18 @@
   ],
   "education": [
     {
-      "institution": "ONE - Alura",
+      "institution": "ONE - Alura Latam",
       "url": "https://app.aluracursos.com/program/certificate/2f9ee185-6b9b-4ea5-837c-26ce5a36cbdd",
-      "area": "Oracle Next Education",
-      "studyType": "F2 T4 Backend Developer",
+      "area": "Backend Developer",
+      "studyType": "Oracle Next Education F2 T4",
       "startYear": "2022",
       "endYear": "2023"
     },
     {
       "institution": "Universidad Privada de Tacna",
       "url": "https://www.upt.edu.pe",
-      "area": "Medicine",
-      "studyType": "Bachelor's Degree",
+      "area": "Medicina",
+      "studyType": "Pregrado",
       "startYear": "2015",
       "endYear": "2022"
     }

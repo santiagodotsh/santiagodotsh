@@ -1,5 +1,5 @@
 ---
-import { resume } from '../../schema'
+import { resume } from '../../utils/schema'
 import CodePen from '../icons/CodePen.astro'
 import Email from '../icons/Email.astro'
 import GitHub from '../icons/GitHub.astro'
@@ -8,10 +8,9 @@ import LinkedIn from '../icons/LinkedIn.astro'
 import Pin from '../icons/Pin.astro'
 import Portfolio from '../icons/Portfolio.astro'
 import Section from '../Section.astro'
-import type { SocialIcon } from '../../types'
 import Phone from '../icons/Phone.astro'
 
-const SOCIAL_ICONS: SocialIcon = {
+const SOCIAL_ICONS: Record<string, string | any> = {
   GitHub,
   LinkedIn,
   CodePen

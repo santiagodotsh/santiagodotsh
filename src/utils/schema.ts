@@ -1,5 +1,5 @@
 import { z } from "astro:content"
-import r from '../resume.json'
+import r from '../../resume.json'
 
 const ResumeSchema = z.object({
   basics: z.object({

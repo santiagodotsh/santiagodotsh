@@ -1,4 +1,7 @@
 ---
+import { formatDate } from '../utils/format-date'
+import type { Time } from '../utils/format-date'
+
 interface Props {
   name: string
   position: string
@@ -7,27 +10,11 @@ interface Props {
     remote?: boolean
     hybrid?: boolean
   }
-  start: {
-    year: string
-    month: string
-  }
-  end?: {
-    year: string
-    month: string
-  }
+  start: Time
+  end?: Time
   summary: string
   url: string
 }
-
-const {
-  name,
-  position,
-  modality,
-  start,
-  end,
-  summary,
-  url
-} = Astro.props
 
 const months = [
   'ene',
@@ -44,18 +31,15 @@ const months = [
   'dic'
 ]
 
-const startNumeric = new Date(+start.year, +start.month - 1).getTime()
-const endNumeric = !!end ? new Date(+end.year, +end.month - 1).getTime() : new Date().getTime()
-
-const total = Math.floor((endNumeric - startNumeric) / (86_400_000 * (304_375 / 10_000)))
-
-const totalYears = Math.floor(total / 12)
-const totalMonths = total % 12
-
-const totalYearsString = (totalYears > 0) ? `${totalYears} ${(totalYears === 1) ? 'año' : 'años'}` : ''
-const totalMonthsString = (totalMonths > 0) ? `${totalMonths} ${(totalMonths === 1) ? 'mes' : 'meses'}` : ''
-
-const totalString = totalYearsString + (totalYears > 0 && totalMonths > 0 ? ' y ' : '') + totalMonthsString
+const {
+  name,
+  position,
+  modality,
+  start,
+  end,
+  summary,
+  url
+} = Astro.props
 ---
 
 <div class='w-full h-auto flex flex-col justify-start items-start space-y-2'>
@@ -80,7 +64,7 @@ const totalString = totalYearsString + (totalYears > 0 && totalMonths > 0 ? ' y 
         </div>
 
         <span class='font-light hidden sm:block text-[11px] opacity-65 print:text-slate-800 font-sans text-slate-300 tabular-nums'>
-          {totalString}
+          {formatDate(start, end).totalString}
         </span>
       </h3>
       <div class='flex flex-row justify-end items-center'>
@@ -89,7 +73,7 @@ const totalString = totalYearsString + (totalYears > 0 && totalMonths > 0 ? ' y 
         </span>
 
         {!!!end ? (
-          <span class='animate-pulse -mb-1 print:hidden text-green-500 text-[32px]'>
+          <span class='animate-pulse -mb-[3px] -ml-[1px] print:hidden text-green-500 text-[32px]'>
             &bull;
           </span>
 

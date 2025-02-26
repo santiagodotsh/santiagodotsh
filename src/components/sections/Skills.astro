@@ -1,7 +1,6 @@
 ---
-import { resume } from '../../schema'
+import { resume } from '../../utils/schema'
 import Section from '../Section.astro'
-import type { SocialIcon } from '../../types'
 import HTML from '../icons/HTML.astro'
 import CSS from '../icons/CSS.astro'
 import JavaScript from '../icons/JavaScript.astro'
@@ -28,7 +27,7 @@ import Laravel from '../icons/Laravel.astro'
 import TanStackQuery from '../icons/TanStackQuery.astro'
 import Zustand from '../icons/Zustand.astro'
 
-const SKILL_ICONS:SocialIcon = {
+const SKILL_ICONS: Record<string, string | any> = {
   HTML,
   CSS,
   JavaScript,
