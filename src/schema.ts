@@ -29,8 +29,14 @@ const ResumeSchema = z.object({
     position: z.string(),
     remote: z.boolean(),
     url: z.string(),
-    startYear: z.string(),
-    endYear: z.string().optional(),
+    start: z.object({
+      year: z.string(),
+      month: z.string()
+    }),
+    end: z.object({
+      year: z.string(),
+      month: z.string()
+    }).optional(),
     summary: z.string()
   })),
   education: z.array(z.object({

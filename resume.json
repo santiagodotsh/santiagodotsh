@@ -33,7 +33,10 @@
       "position": "Full-stack Web & Mobile Developer",
       "remote": false,
       "url": "https://innovahora.com/web/",
-      "startYear": "2024",
+      "start": {
+        "year": "2024",
+        "month": "10"
+      },
       "summary": "Desarrollo aplicaciones web y móviles personalizadas según las necesidades del cliente, gestionando la lógica del backend y las interfaces del frontend en colaboración con un equipo multidisciplinario. Tecnologías utilizadas: TypeScript, Next.js, Expo, PHP, Laravel y MySQL."
     },
     {
@@ -41,8 +44,14 @@
       "position": "Full-stack Web Developer",
       "remote": true,
       "url": "https://since.global",
-      "startYear": "2023",
-      "endYear": "2024",
+      "start": {
+        "year": "2023",
+        "month": "4"
+      },
+      "end": {
+        "year": "2024",
+        "month": "10"
+      },
       "summary": "Contribuí al desarrollo del producto principal implementando nuevas funcionalidades y mejorando su rendimiento. Trabajé con equipos multifuncionales para optimizar la experiencia del usuario. Tecnologías utilizadas: TypeScript, Node.js, Next.js y MongoDB."
     },
     {
@@ -50,8 +59,14 @@
       "position": "Freelance Developer",
       "remote": true,
       "url": "#",
-      "startYear": "2021",
-      "endYear": "2023",
+      "start": {
+        "year": "2021",
+        "month": "11"
+      },
+      "end": {
+        "year": "2023",
+        "month": "4"
+      },
       "summary": "He realizado proyectos con éxito, obteniendo comentarios positivos y destacando entre los principales freelancers de mi país. Me especializo en soluciones confiables y efectivas en backend y frontend. Tecnologías utilizadas: JavaScript, React, Node.js y MySQL."
     }
   ],

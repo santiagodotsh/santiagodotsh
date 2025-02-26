@@ -15,3 +15,6 @@ ninja-keys::part(ninja-input) {
   display: none;
 }
 
+html[lang] {
+  -webkit-user-modify: read-only;
+}
