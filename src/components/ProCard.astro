@@ -25,12 +25,12 @@ const {
   <div class='w-full h-auto flex flex-col'>
     <div class='space-y-1 w-full h-auto flex flex-col justify-start items-start'>
       <div class='w-full h-auto flex flex-row justify-between items-center'>
-        <h3 class='inline-flex font-sans text-slate-100 items-center justify-center font-medium'>
+        <h3 class='inline-flex font-sans print:text-slate-800 text-slate-100 items-center justify-center font-medium'>
           <a
             href={url}
             target='_blank'
             rel='noopener noreferrer'
-            class='inline-flex items-center gap-1 hover:underline'
+            class='inline-flex print:text-slate-800 items-center gap-1 hover:underline'
           >
             {name}
           </a>
@@ -48,7 +48,7 @@ const {
           <GitHub />
         </a>
       </div>
-      <p class='text-pretty pr-12 text-slate-300 text-xs'>
+      <p class='text-pretty pr-12 print:text-slate-800 text-slate-300 text-xs'>
         {description}
       </p>
     </div>
@@ -57,7 +57,7 @@ const {
     <div class='flex flex-wrap gap-1'>
       {keywords.map((keyword) => (
         <div class='flex print:border print:border-slate-200 justify-center items-center rounded-md px-1.5 py-[1px] bg-slate-900'>
-          <span class='font-sans text-[10px] font-medium text-slate-500 text-nowrap'>
+          <span class='font-sans text-[10px] font-medium print:text-slate-800 text-slate-500 text-nowrap'>
             {keyword}
           </span>
         </div>

@@ -21,13 +21,13 @@ const SOCIAL_ICONS: SocialIcon = {
 <Section>
   <div class='w-full print:-mb-4 h-auto flex flex-row justify-start md:justify-between space-x-4 items-center'>
     <header class='w-full h-auto flex flex-col justify-start items-start space-y-1.5'>
-      <h1 class='font-sans text-slate-100 mb-[2px] text-2xl font-bold'>
+      <h1 class='font-sans print:text-slate-800 text-slate-100 mb-[2px] text-2xl font-bold'>
         {resume?.basics.name}
       </h1>
-      <p class='text-pretty max-w-md text-sm text-slate-300'>
+      <p class='text-pretty max-w-md text-sm print:text-slate-800 text-slate-300'>
         {resume?.basics.label}
       </p>
-      <p class='max-w-md text-xs text-slate-300'>
+      <p class='max-w-md text-xs print:text-slate-800 text-slate-300'>
         <a
           class='group/maps inline-flex gap-x-1.5 align-baseline items-center leading-none hover:underline'
           href={resume?.basics.location.maps}
@@ -45,7 +45,7 @@ const SOCIAL_ICONS: SocialIcon = {
           url={resume?.basics.url ?? '#'}
         >
           <Portfolio />
-          <span class='hidden text-xs print:block'>
+          <span class='hidden text-xs print:text-slate-800 print:block'>
             {resume?.basics.url.slice(8)}
           </span>
         </HeroButton>
@@ -54,7 +54,7 @@ const SOCIAL_ICONS: SocialIcon = {
           url={`mailto:${resume?.basics.email}`}
         >
           <Email />
-          <span class='hidden text-xs print:block'>
+          <span class='hidden text-xs print:text-slate-800 print:block'>
             {resume?.basics.email}
           </span>
         </HeroButton>
@@ -63,7 +63,7 @@ const SOCIAL_ICONS: SocialIcon = {
           url={`tel:${resume?.basics.phone}`}
         >
           <Phone />
-          <span class='hidden text-xs print:block'>
+          <span class='hidden text-xs print:text-slate-800 print:block'>
             {resume?.basics.phone}
           </span>
         </HeroButton>
@@ -75,7 +75,7 @@ const SOCIAL_ICONS: SocialIcon = {
               url={`${url}${username}`}
             >
               {Icon && <Icon />}
-              <span class='hidden text-xs print:block'>
+              <span class='hidden text-xs print:text-slate-800 print:block'>
                 {`${network === 'LinkedIn' ? '/in/' : '/'}${username}`}
               </span>
             </HeroButton>

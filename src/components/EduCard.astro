@@ -21,25 +21,25 @@ const {
 <div class='w-full h-auto flex flex-col justify-start items-start space-y-2'>
   <div class='w-full h-auto flex flex-col justify-start items-start space-y-1.5'>
     <div class='w-full h-auto flex flex-row justify-between items-center'>
-      <h3 class='inline-flex font-sans text-slate-100 items-center justify-center font-medium'>
+      <h3 class='inline-flex font-sans print:text-slate-800 text-slate-100 items-center justify-center font-medium'>
         <a
           href={url}
           target='_blank'
           rel='noopener noreferrer'
-          class='hover:underline'
+          class='hover:underline print:text-slate-800'
         >
           {institution}
         </a>
       </h3>
-      <span class='font-light text-[15px] font-sans text-slate-300 tabular-nums'>
+      <span class='font-light text-[15px] print:text-slate-800 font-sans text-slate-300 tabular-nums'>
         {`${startYear} - ${endYear}`}
       </span>
     </div>
-    <h4 class='text-sm text-slate-100 leading-none text-left'>
+    <h4 class='text-sm print:text-slate-800 text-slate-100 leading-none text-left'>
       {studyType}
     </h4>
   </div>
-  <p class='text-pretty text-slate-300 mt-2 text-xs'>
+  <p class='text-pretty print:text-slate-800 text-slate-300 mt-2 text-xs'>
     {area}
   </p>
 </div>

@@ -6,7 +6,7 @@ import Section from '../Section.astro'
 <Section title='Acerca de mí'>
   {
     resume?.basics.summary.split('\n').map((line) => (
-      <p class='text-pretty text-sm text-slate-300'>
+      <p class='text-pretty text-sm print:text-slate-800 text-slate-300'>
         {line}
       </p>
     ))
