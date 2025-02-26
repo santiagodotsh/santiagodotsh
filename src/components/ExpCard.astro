@@ -43,6 +43,19 @@ const months = [
   'nov',
   'dic'
 ]
+
+const startNumeric = new Date(+start.year, +start.month - 1).getTime()
+const endNumeric = !!end ? new Date(+end.year, +end.month - 1).getTime() : new Date().getTime()
+
+const total = Math.floor((endNumeric - startNumeric) / (86_400_000 * (304_375 / 10_000)))
+
+const totalYears = Math.floor(total / 12)
+const totalMonths = total % 12
+
+const totalYearsString = (totalYears > 0) ? `${totalYears} ${(totalYears === 1) ? 'año' : 'años'}` : ''
+const totalMonthsString = (totalMonths > 0) ? `${totalMonths} ${(totalMonths === 1) ? 'mes' : 'meses'}` : ''
+
+const totalString = totalYearsString + (totalYears > 0 && totalMonths > 0 ? ' y ' : '') + totalMonthsString
 ---
 
 <div class='w-full h-auto flex flex-col justify-start items-start space-y-2'>
@@ -57,19 +70,38 @@ const months = [
         >
           {name}
         </a>
-        {
-          <div class='flex justify-center items-center rounded-md px-2 py-0.5 bg-slate-900'>
-            <span class='text-xs font-medium print:text-slate-800 text-slate-400 text-nowrap'>
-              {modality.onSite && 'Presencial'}
-              {modality.remote && 'Remoto'}
-              {modality.hybrid && 'Híbrido'}
-            </span>
-          </div>
-        }
+
+        <div class='flex justify-center items-center rounded-md px-2 py-0.5 bg-slate-900'>
+          <span class='text-xs font-medium print:text-slate-800 text-slate-400 text-nowrap'>
+            {modality.onSite && 'Presencial'}
+            {modality.remote && 'Remoto'}
+            {modality.hybrid && 'Híbrido'}
+          </span>
+        </div>
+
+        <span class='font-light hidden sm:block text-[11px] opacity-65 print:text-slate-800 font-sans text-slate-300 tabular-nums'>
+          {totalString}
+        </span>
       </h3>
-      <span class='font-light text-[15px] print:text-slate-800 font-sans text-slate-300 tabular-nums'>
-        {`${months[+start.month - 1]} ${start.year} ~ ${end ? `${months[+end.month - 1]} ${end.year}` : 'presente'}`}
-      </span>
+      <div class='flex flex-row justify-end items-center'>
+        <span class='font-light text-[15px] print:text-slate-800 font-sans text-slate-300 tabular-nums'>
+          {`${months[+start.month - 1]} ${start.year} ~`}
+        </span>
+
+        {!!!end ? (
+          <span class='animate-pulse -mb-1 print:hidden text-green-500 text-[32px]'>
+            &bull;
+          </span>
+
+          <span class='font-light hidden print:block text-[15px] print:text-slate-800 font-sans text-slate-300 tabular-nums'>
+            &nbsp;presente
+          </span>
+        ) : (
+          <span class='font-light text-[15px] print:text-slate-800 font-sans text-slate-300 tabular-nums'>
+            &nbsp;{`${months[+end.month - 1]} ${end.year}`}
+          </span>
+        )}
+      </div>
     </div>
     <h4 class='text-sm print:text-slate-800 text-slate-100 leading-none text-left'>
       {position}
