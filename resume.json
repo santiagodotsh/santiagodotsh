@@ -31,7 +31,9 @@
     {
       "name": "Innovahora",
       "position": "Full-stack Web & Mobile Developer",
-      "remote": false,
+      "modality": {
+        "hybrid": true
+      },
       "url": "https://innovahora.com/web/",
       "start": {
         "year": "2024",
@@ -42,7 +44,9 @@
     {
       "name": "Since Global",
       "position": "Full-stack Web Developer",
-      "remote": true,
+      "modality": {
+        "remote": true
+      },
       "url": "https://since.global",
       "start": {
         "year": "2023",
@@ -57,7 +61,9 @@
     {
       "name": "Workana",
       "position": "Freelance Developer",
-      "remote": true,
+      "modality": {
+        "remote": true
+      },
       "url": "#",
       "start": {
         "year": "2021",
@@ -115,12 +121,12 @@
   ],
   "languages": [
     {
-      "language": "Español",
-      "fluency": "Nativo"
-    },
-    {
       "language": "Ingles",
       "fluency": "Intermedio"
+    },
+    {
+      "language": "Español",
+      "fluency": "Nativo"
     }
   ],
   "projects": [

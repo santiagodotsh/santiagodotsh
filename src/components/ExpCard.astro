@@ -2,7 +2,11 @@
 interface Props {
   name: string
   position: string
-  remote: boolean
+  modality: {
+    onSite?: boolean
+    remote?: boolean
+    hybrid?: boolean
+  }
   start: {
     year: string
     month: string
@@ -18,7 +22,7 @@ interface Props {
 const {
   name,
   position,
-  remote,
+  modality,
   start,
   end,
   summary,
@@ -53,13 +57,15 @@ const months = [
         >
           {name}
         </a>
-        {remote && (
+        {
           <div class='flex justify-center items-center rounded-md px-2 py-0.5 bg-slate-900'>
             <span class='text-xs font-medium print:text-slate-800 text-slate-400 text-nowrap'>
-              Remote
+              {modality.onSite && 'Presencial'}
+              {modality.remote && 'Remoto'}
+              {modality.hybrid && 'Híbrido'}
             </span>
           </div>
-        )}
+        }
       </h3>
       <span class='font-light text-[15px] print:text-slate-800 font-sans text-slate-300 tabular-nums'>
         {`${months[+start.month - 1]} ${start.year} ~ ${end ? `${months[+end.month - 1]} ${end.year}` : 'presente'}`}
