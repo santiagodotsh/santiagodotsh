@@ -82,20 +82,20 @@
   ],
   "education": [
     {
+      "institution": "Universidad Tecnológica del Perú",
+      "url": "https://www.utp.edu.pe/",
+      "area": "Ingeniería de Software",
+      "studyType": "Pregrado",
+      "startYear": "2025",
+      "endYear": "2030"
+    },
+    {
       "institution": "ONE - Alura Latam",
       "url": "https://app.aluracursos.com/program/certificate/2f9ee185-6b9b-4ea5-837c-26ce5a36cbdd",
-      "area": "Backend Developer",
+      "area": "Software Developer",
       "studyType": "Oracle Next Education F2 T4",
       "startYear": "2022",
       "endYear": "2023"
-    },
-    {
-      "institution": "Universidad Privada de Tacna",
-      "url": "https://www.upt.edu.pe",
-      "area": "Medicina",
-      "studyType": "Pregrado",
-      "startYear": "2015",
-      "endYear": "2022"
     }
   ],
   "certificates": [],
