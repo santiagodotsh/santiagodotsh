@@ -39,6 +39,10 @@
         "year": "2024",
         "month": "10"
       },
+      "end": {
+        "year": "2025",
+        "month": "4"
+      },
       "summary": "Desarrollo aplicaciones web y móviles personalizadas según las necesidades del cliente, gestionando la lógica del backend y las interfaces del frontend en colaboración con un equipo multidisciplinario. Tecnologías utilizadas: TypeScript, Next.js, Expo, PHP, Laravel y MySQL."
     },
     {
