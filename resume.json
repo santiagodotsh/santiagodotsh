@@ -3,11 +3,11 @@
     "name": "Santiago Ramos",
     "label": "Software developer | TypeScript | Node.js | React | Next.js | Expo | NestJS | Git | Linux | Docker",
     "image": "/me.png",
-    "email": "hello@santiago.sh",
-    "phone": "+51967779923",
-    "url": "https://santiago.sh",
+    "email": "hello@srmz.cc",
+    "phone": "",
+    "url": "https://srmz.cc",
     "download": "/resume.pdf",
-    "summary": "Soy Santiago, un desarrollador de software de Perú con más de ${experience} de experiencia escribiendo código limpio y mantenible. Me especializo en la creación de interfaces de usuario intuitivas, el desarrollo de lógica eficiente del lado del servidor y la optimización de flujos de datos. Me apasiona el aprendizaje continuo y contribuir a proyectos de código abierto.",
+    "summary": "Desarrollador de software enfocado en código limpio, interfaces intuitivas, lógica backend eficiente y optimización de flujos de datos. Apasionado por el aprendizaje continuo y el open-source.",
     "location": {
       "city": "Ilo",
       "country": "Perú",
@@ -17,12 +17,12 @@
     "profiles": [
       {
         "network": "GitHub",
-        "username": "santiagodotsh",
+        "username": "srzmcc",
         "url": "https://github.com/"
       },
       {
         "network": "LinkedIn",
-        "username": "santiagodotsh",
+        "username": "srmzcc",
         "url": "https://linkedin.com/in/"
       }
     ]
@@ -39,11 +39,7 @@
         "year": "2024",
         "month": "10"
       },
-      "end": {
-        "year": "2025",
-        "month": "5"
-      },
-      "summary": "Desarrollé aplicaciones web y móviles personalizadas según las necesidades del cliente, gestionando la lógica del backend y las interfaces del frontend en colaboración con un equipo multidisciplinario. Tecnologías utilizadas: TypeScript, Next.js, Expo, PHP, Laravel y MySQL."
+      "summary": "Desarrollo aplicaciones web y móviles personalizadas según las necesidades del cliente, gestionando la lógica del backend y las interfaces del frontend en colaboración con un equipo multidisciplinario. Tecnologías utilizadas: TypeScript, Next.js, Expo, PHP, Laravel y MySQL."
     },
     {
       "name": "Since Global",
@@ -86,16 +82,16 @@
       "url": "https://www.utp.edu.pe/",
       "area": "Ingeniería de Software",
       "studyType": "Pregrado",
-      "startYear": "2025",
-      "endYear": "2030"
+      "startYear": "2017",
+      "endYear": "2022"
     },
     {
       "institution": "ONE - Alura Latam",
       "url": "https://app.aluracursos.com/program/certificate/2f9ee185-6b9b-4ea5-837c-26ce5a36cbdd",
       "area": "Software Developer",
       "studyType": "Oracle Next Education F2 T4",
-      "startYear": "2022",
-      "endYear": "2023"
+      "startYear": "2021",
+      "endYear": "2022"
     }
   ],
   "certificates": [],
